@@ -1,0 +1,180 @@
+@charset "utf-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* Force scrollbar */
+html { overflow-y: scroll; }
+
+/* Align radios and text inputs with their label */
+
+input[type='radio'] { vertical-align: text-bottom; }
+
+/* Hand cursor on clickable input elements */
+label,
+input[type='button'],
+input[type='submit'],
+button { cursor: pointer; }
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em { font-style: italic; }
+
+img {
+  width: 100%;
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup { top: -.7em; }
+sub { bottom: -.25em; }
+
+/* 1.2. Clear Fix ========================== */
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after { clear: both; }
+.cf { *zoom: 1; }
+
+/*for all*/
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a { 
+  display: inline-block;
+  text-decoration: none !important; 
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+/* ==============================
+  App styling starts here
+============================== */
+.App {
+  height: 100vh;
+  background-color: #12100f;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  letter-spacing: .5px;
+}
+
+.box-controller {
+  padding: 0 !important;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.controller {
+  width: 50%;
+  border-bottom: 3px solid #bfb5ad;
+  padding-bottom: 15px; 
+  color: #f0f0f0;   
+  cursor: pointer;
+  font: bold 15px sans-serif;
+  text-align: center;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.selected-controller { border-bottom: 3px solid #519872; }
+
+.box-container { 
+  padding: 30px 3%;
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: #f0f0f0;
+}
+
+.form-control:focus {
+  border-color: #12100f !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  color: #12100f !important;
+}
+
+.form-control { background-color: transparent !important; }
+
+.btn {
+  width: 100%;
+  border: none !important;
+  margin-top: 10px;
+  background-color: #519872 !important;
+  color: #f0f0f0 !important;
+  font-weight: bold !important;
+  outline: none !important;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.btn:focus { 
+  -webkit-box-shadow: none !important; 
+  box-shadow: none !important; 
+}
+
+.btn:hover { background-color: #3b5249 !important; }
+
+.error {
+  margin: 5px 0 0 1%;
+  color: #cf1e15;
+  font-size: 13px;
+}
+
+.inputError {
+  border-color: #cf1e15 !important;
+}
+/* ==============================
+  App styling endss here
+============================== */
